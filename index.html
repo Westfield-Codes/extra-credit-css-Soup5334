@@ -12,6 +12,7 @@
       text-align: center;
        box-shadow: 15px 15px 10px 12px rgb(167, 169, 170);
       font-family: Helvetica, Arial,  sans-serif;
+      margin:auto;
      }
 
      h1 {
@@ -29,11 +30,9 @@
       position:relative;
       margin-top:5px;
      }
-     .line {
-      background-color: #ff37d4;
-      position: relative;
-      margin-top:130px;
-      height: 7px;
+     #name {
+      padding-bottom:70px;
+      border-bottom: 7px solid  #ff37d4;
      }
 
      img {
@@ -47,17 +46,14 @@
   <body onload="setup()">
     
     <div class="nametag">
-        <h1>HELLO</h1> 
-        <h2>My Name Is</h2>
+        <h1 id="title">Hello</h1> 
+        <h2 id="subtitle">My Name Is</h2>
         <div id="name">
-
-        </div>
-        <div class="line">
+          <input id="get-name"type="text">
         </div>
     </div>
  
-  
-    <img src="nametag.jpg" width="800px">
+
   
   <script src="script.js"></script>
   </body>
