@@ -24,4 +24,9 @@ let title=document.getElementById("title");
 title.innerHTML="RPS";
 let subtitle =document.getElementById("subtitle");
 subtitle.innerHTML="How Many Rounds?";
+let rounds=document.createElement("input");
+rounds.id="rounds";
+rounds.value="Enter Odd Number Here";
+let nameBox=document.getElementById("name");
+nameBox.appendChild(rounds);
 }
