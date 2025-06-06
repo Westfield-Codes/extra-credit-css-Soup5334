@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPS Web App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload = "showRound();">
+    <div id="scoreBox">Score: loading</div>
+    <div id="statsBox">Loading ...</div>
+    <div id = "buttons">
+      <img src="https://static.wikia.nocookie.net/bwwe/images/c/c5/The_Rock_2.jpg" onclick="cpuTurn('r');">
+      <button onclick="cpuTurn('p');">Paper</button>
+      <img src="https://swsca-production.s3.amazonaws.com/uploads/attachments/17/edward-final-blog-post.jpg" onclick="cpuTurn('s');">Scissors</button>
+    </div>
+    <div id="result">Choose a move</div>
+    <script src="script.js"></script>
+  </body>
+</html>
