@@ -90,7 +90,15 @@ function cpuTurn(u){
     let moves = ["r","p","s"];
     let choice = Math.floor(Math.random()*3);
     let c = moves[choice];
+    if (c=="r") {
+        sb=document.getElementById("scoreBox");
+        sb.innerHTML="<h1>Happy Monday</h1>";
+        let hello=document.createElement(
+            
+        )
+    }
     findWinner(u,c);
+    
 }
 
 /* Function findWinner
@@ -140,3 +148,4 @@ function gameOver(){
     message +=  score.join(" to ");
     document.getElementById("scoreBox").innerHTML = message;
 }
+
